@@ -1,0 +1,337 @@
+//Header Styling
+.navigation-bar{
+    margin:0px;
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+}
+
+.logo-wrapper{
+    float:left;
+    padding:30px;
+}
+
+.link-wrapper{
+    float: right;
+}
+
+.link-wrapper ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding-top:25px;
+}
+
+.link-wrapper ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'calibri', 'arial';
+    letter-spacing: 1px;
+}
+
+.link-wrapper ul {
+  margin:inherit;
+}
+
+.link-active:active, .link-active:visited, .link-active:link{
+    color:#ff244a !important;
+}
+
+.link-wrapper a{
+    color: silver;
+}
+
+.dots{
+    z-index: -1;
+}
+//End Header Styling
+
+//General
+.wrapper{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+.first-top-section-wrapper{
+    background: URL("../assets/Images/hero-home.jpg");
+    height: 60%;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+    background-position-y: bottom;
+}
+
+.first-top-section-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-left-content{
+    float:left;
+    top:20%;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.h1-custom{
+    text-transform: uppercase;
+    font-family: "calibri";
+    color: white;
+    font-size: 60px;
+    font-family: arial;
+}
+
+.negative-bottom-margin{
+    margin-bottom: -20px;
+}
+
+.h2-custom{
+    color: white;
+    text-shadow: 0.5px 0.5px #fff, -0.5px -0.5px #fff;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@supports(-webkit-text-stroke: 0.5px #fff){
+    .h2-custom{
+        color: transparent;
+        -webkit-text-stroke: 0.5px #fff;
+        text-shadow: none;
+    }
+}
+
+.hero-p{
+    color:silver;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+//Pink Button
+.pink-btn{
+    cursor: pointer;
+    border: 2px solid #ff244a;
+    background-color: rgba(253, 1, 98, 0.4);
+    color: #fff;
+    font-size: 1.3em;
+    border-radius: 20px 0px;
+    font-family: 'calibri';
+    padding: 5px 20px;
+}
+
+.pink-btn:hover{
+    background-color: #ff244a;
+    padding: 5px 20px 5px 20px;
+    transition: padding 3s;
+}
+
+.pink-btn:hover:before{
+    content: "Contact us  >" !important;
+    transition: content 3s;
+}
+
+.pink-btn:hover span {
+    display:none;
+}
+
+//Middle Content
+.middle-content{
+    background: #1f2730;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: auto;
+    border-top:1px solid #fff;
+}
+
+.row-flex{
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.left-m-content{
+    border-right: 1px solid #fff;
+    width:40%;
+}
+
+.left-b-content{
+    width:60%;
+    border-right: 1px solid #fff;
+    margin-bottom: -2px;
+}
+
+.left-b-content:hover{
+    width:70% !important;
+    transition: width 2s;
+}
+
+.right-b-content{
+    width: 40%;
+}
+
+/*.left-m-content::before{
+    background: URL("../assets/Images/LA_FERARRI.png");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    opacity: 0.10;
+}*/
+
+.right-m-content{
+    width: 60%;
+    transition: width 2s;
+    margin-bottom: -5px;
+}
+
+.right-m-content:hover{
+    width:70%;
+    transition: width 2s;
+}
+
+.pic-middle{
+    width: 100%;
+    height: auto;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image:hover:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(241, 2, 94, 0.349);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}
+
+.left-m-center-content{
+    margin: 0 auto;
+    width: 45%;
+    top: 40%;
+    position: relative;
+}
+
+.right-b-center-content{
+    margin: 0 auto;
+    width: 45%;
+    top: 40%;
+    position: relative;
+}
+
+h6{
+    color:silver;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-bottom: -25px;
+}
+
+.hero-h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.learn-more{
+    color:#ff244a;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.middle-hero-background-text{
+    font-size: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-b-content::before{
+    background: URL("../assets/Images/MODEL_S.png");
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position-y: 45%;
+    background-position-x: right;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    opacity: 0.10;
+}
+
+.rel-position{
+    position: relative;
+}
+
+//FOOTER
+footer{
+    height:auto;
+    min-height: 300px;
+    background-color: #1f2730;
+    width: 100%;
+    display: inline-block;
+}
+
+.left-footer-content{
+    float: left;
+    margin-top: 100px;
+}
+
+.footer-p{
+    color:silver !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media-icon-wrapper > a > img{
+    margin:5px 8px;
+}
+
+.social-link:hover > img{
+    color:#ff244a !important;
+}
+
+.right-footer-content{
+    float: right;
+    width: 25%;
+    margin-top: 100px;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-rows{
+    display: flex;
+}
+
+.footer-col-1{
+    width: 50%;
+}
+
+.footer-col-2{
+    width: 50%;
+}
+
+.footer-col-1 > strong, .footer-col-2 > strong{
+    text-transform: uppercase;
+}
+
+.footer-col-1 > p, .footer-col-2 > p{
+    font-weight: 100 !important;
+    font-size: 12px !important;
+    color:silver;
+}
